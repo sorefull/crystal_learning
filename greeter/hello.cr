@@ -1,9 +1,12 @@
+# Module Greeter with class Hello was made for greeting lol.
+# Here you can find class and intance methods & variables.
+
 module Greeter
   class Hello
     @@hello = "Hello "
 
     def initialize(@hello : String)
-      @hello = @hello + ' '
+      @hello = @hello + " "
     end
 
     def self.world
