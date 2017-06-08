@@ -3,8 +3,7 @@ module Greeter
     @@hello = "Hello "
 
     def initialize(@hello : String)
-      @hello = Hello.compact(@hello)
-      @hello += ' '
+      @hello = @hello + ' '
     end
 
     def self.world
@@ -21,14 +20,6 @@ module Greeter
 
     def world
       puts @hello + "world"
-    end
-
-    protected def self.compact(string) : String
-      if string[-1] == " "
-        return Hello.compact(string[0..-2])
-      else
-        return string
-      end
     end
   end
 end
